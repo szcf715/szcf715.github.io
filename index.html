@@ -60,30 +60,14 @@ body {
 </style>
 <script language="javascript">
 var mzstr =location.search.split("=")[1];
-if(!mzstr){mz="DD01网址导航";mz2="您";}else{
+if(!mzstr){mz="weiya";mz2="沅一";}else{
 var mz = mzstr.substring(0,mzstr.length-2);
 var mz2 =location.search.split("=")[2];
-if(!mz){mz="DD01网址导航";}else{mz=unescape(mz);}
-if(!mz2){mz2="您";}else{mz2=unescape(mz2);}
+if(!mz){mz="weiya";}else{mz=unescape(mz);}
+if(!mz2){mz2="沅一";}else{mz2=unescape(mz2);}
 }
-function check(obj){
-if (obj.stra.value.length>18) {
-alert('您输入的名字太长了\n\n请重新输入'); 
-return false;
-}
-if (obj.stra.value.length==0) {
-alert('还没填姓名呀'); 
-obj.stra.focus();
-return false;
-}
-var url = location.protocol + "//" + location.host + location.pathname+"?n="+escape(obj.stra.value)+"&m="+escape(obj.stra2.value);
-if ((navigator.userAgent.indexOf('MSIE') >= 0) && (navigator.userAgent.indexOf('Opera') < 0)){
-window.clipboardData.setData("Text","这是我特别为您制作的生日祝福祝福网页，祝你生日快乐，快去看看吧。\n" +url);
-alert('网址已生成并替您复制好了，直接粘贴到QQ、MSN、邮箱就可以了\n\n您的朋友一定会很惊喜，快快发送吧！\n\n点击确定后可预览生成的网页。');
-}
-window.location.replace(url);
-return false;
-}
+
+
 //滚屏
 var speed=1        //這里可以調整滾動速度
 var currentpos=0,alt=1,curpos1=0,curpos2=-1 
@@ -215,22 +199,7 @@ setInterval("scrollwindow()",100)
   </tr>
 </table>
 <style>.tips2{FONT-WEIGHT:bold;FONT-SIZE:18px;COLOR:#b155d9;PADDING-TOP:10px;HEIGHT:30px;TEXT-ALIGN:center}.tips{ font-size:18px; font-weight:bold; line-height:32px;}#div_box{BORDER-RIGHT:#b155d9 4px solid;PADDING-RIGHT:5px;BORDER-TOP:#b155d9 4px solid;PADDING-LEFT:5px;PADDING-BOTTOM:5px;BORDER-LEFT:#b155d9 4px solid;WIDTH:700px;PADDING-TOP:5px;BORDER-BOTTOM:#b155d9 4px solid; margin:0px auto;}.sltbox{HEIGHT:30px;TEXT-ALIGN:left}.s{PADDING-RIGHT:6px;FONT-WEIGHT:bold;FONT-SIZE:16px;COLOR:#555;FONT-FAMILY:Arial}.top_title{height:90px;text-align:center;font-size:40px;line-height:90px;filter:glow(color=#ffff00,strength=16);color:#ff0000;font-family:"文鼎特圆简";font-weight:bold;margin-top:10px;}a:link,a:hover{ text-decoration:none;}</style>
-<center>
-<DIV class=tips2>只需填写名字就可以设计出属于您的个性生日祝福网页哦！</DIV>
-<FORM name=newinfo_form onSubmit="return check(this)">
-<DIV id=div_box><DIV class=sltbox id=menu_1><SPAN class=s>输入您的名字: </SPAN><INPUT id=stra tabIndex=1 maxLength=18 size=15 name=stra style="PADDING-LEFT: 3px; FONT-SIZE:16px;height:28px;padding-top:3px;">
-<SPAN class=s>朋友的名字：</SPAN><INPUT name=stra2 id=stra2 style="PADDING-LEFT: 3px; FONT-SIZE:16px;height:28px;padding-top:3px;" tabIndex=1 size=15 maxLength=18> 
-    <INPUT type=submit value=生成我的祝福网页 name=Submit style="FONT-SIZE: 16px; MARGIN-BOTTOM: -1px; WIDTH: 10.4em; PADDING-TOP: 2px; HEIGHT: 1.9em">
-</DIV>
-</DIV>
-</FORM>
-</center>  <BR>
-<p>
-<center style="line-height:30px;"><B><FONT color=#b155d9 size=4>最后，推荐一个很好的上网主页“</FONT><A href="http://www.dd01.com/1.htm" target="_blank" title="查看DD01网址导航"><FONT color=#b155d9 size=4>DD01网址导航</FONT></A><FONT color=#b155d9 size=4>”</FONT><a href="http://www.dd01.com" onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.dd01.com/');return(false);" style="behavior: url(#default#homepage); text-decoration:none;" title="点击把DD01设为主页"><FONT color=#b155d9 size=4>,我一直用它做主页，你也用用它吧  O(∩_∩)O~</FONT></a></FONT></B></center> </p><p><B><center><FONT color=#b155d9 size=4>您也可以将本祝福：</FONT>
-<INPUT onClick="javascript:window.open('http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+encodeURIComponent(document.location.href));void(0)" type=button value=分享到QQ空间 style="height:26px;width:108px;">
-<INPUT onClick="javascript:window.open('http://v.t.qq.com/share/share.php?title='+encodeURIComponent(document.title)+'&site=http://www.qoocu.com&pic=&url='+encodeURIComponent(document.location.href));void(0)" type=button value=转播到腾讯微博 style="height:26px;width:118px;">
-<INPUT onClick="javascript:window.open('http://service.t.sina.com.cn/share/share.php?title='+encodeURIComponent(document.title)+'&url='+encodeURIComponent(document.location.href));void(0)" type=button value=转播到新浪微博 style="height:26px;width:118px;">
-<INPUT onClick="javascript:window.open('http://shuqian.qq.com/post?from=3&title='+encodeURIComponent(document.title)+'&uri='+encodeURIComponent(document.location.href)+'&jumpback=2&noui=1');void(0)" type=button value=保存到QQ书签 style="height:26px;width:108px;"></center></p>  
+  <BR>
 </BODY>
 </HTML>
 <script>
